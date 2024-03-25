@@ -143,19 +143,19 @@ body{
     font-size: medium;
     margin-left: 15px;
     margin-right: 30px;
-    border: none; /* Eliminar bordes predeterminados */
-    border-bottom: 1px solid white; /* Añadir borde blanco en la parte inferior */
+    border: none; 
+    border-bottom: 1px solid white; 
     padding-bottom: 5px; 
 }
 #CantPasajeros {
     background-color: #0E192B;
     margin-left: 10px;
     color: white; 
-    width: 40px; 
+    width: 40px;  
     font-size: 20px; 
-    border: none; /* Eliminar bordes predeterminados */
-    border-bottom: 1px solid white; /* Añadir borde blanco en la parte inferior */
-    padding-bottom: 5px; /* Añadir espacio entre el texto y el borde inferior */
+    border: none; 
+    border-bottom: 1px solid white; 
+    padding-bottom: 5px; 
 }
 #BuscarV{
     background-color: #FF3131;
@@ -511,4 +511,75 @@ ul {
 /*REGISTRO*/
 #SApellido{
   margin-left: 50px;
+}
+
+/*ROLES*/
+.OpcionesR{
+  margin-top: 100px;
+  color: white;
+  display: grid;
+
+}
+.OpcionesR a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.OpcionesR li{
+  margin-top: 45px;
+}
+.Usuarios{
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 39px;
+  width: 90%;
+  color: black;
+
+}
+.Usuarios h3{
+  margin-left: 60px;
+}
+.RolesInicio{
+  display: flex;
+}
+.TablaRoles{
+  background-color: #DDE7EE;
+  margin: 100px;
+  border-radius: 10px; 
+  overflow: hidden;
+  
+  
+}
+#BuscadorNombres{
+  background-color: #0E192B;
+  margin-left: 40px;
+  margin-top: 150px;
+    width: 150px;
+    color: white; 
+    font-size: 20px; 
+    border: none; 
+    border-bottom: 1px solid white; 
+    padding-bottom: 5px; 
+}
+.TablaRoles a{
+  text-decoration: none;
+  color: black ;
+  
+  
+}
+td{
+  text-align: left;
+  border-bottom: 2px solid #ABBECE; 
+  padding-right: 30px;
+  padding-top: 25px;
+}
+#BuscarRol{
+  background-color: #FF3131;
+    width: 155px;
+    border: none;
+    margin-left: 40px;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    margin-top: 10px;
 }
