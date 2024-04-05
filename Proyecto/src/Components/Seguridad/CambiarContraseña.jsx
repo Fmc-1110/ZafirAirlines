@@ -1,12 +1,11 @@
-import React from 'react'
 
-export default function CrearUsuario() {
+export default function CambiarContraseña() {
   return (
     <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Crear usuario</title>
+        <title>Cambiar contraseña</title>
     </head>
     <header className="header">
     <div className="logo">
@@ -14,6 +13,7 @@ export default function CrearUsuario() {
         <img src="/ZafirLogo.jpg" alt="ZAFIR AIRLINES" />
       </a>
       <a className="MENUA" href="#">Seguridad</a>
+      <a className="MENUA" href="#">Administración</a>
       
     </div>
     <nav >
@@ -46,25 +46,16 @@ export default function CrearUsuario() {
             
         </div>
         <div className='Usuarios'>
-        <h2 className='RegistroH2'>Usuarios</h2>
+        <h2 className='RegistroH2'>Cambiar contraseña</h2>
                   
                   <form className="form form-login">
                       <div>
                           <label >
-                              <input type="text" placeholder="Nombre" name="Nombre"/>
+                              <input type="text" placeholder="Usuario" name="Usuario"/>
                           </label>
                       </div>
                       <div>
-                          <label>
-                              <input type="text" placeholder="Primer apellido" name="PApellido"/>
-                             
-                          </label>
-                          <label >
-                          <input type="text" placeholder="Segundo apellido" name="SApellido" id="SApellido" />
-                          </label>
-                          <label >
-                          <input type="email" placeholder="Correo electrónico" name="Correo" id="Correo" />
-                          </label>
+                          
                           <label >
                           <input type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" /> 
                           
@@ -72,17 +63,10 @@ export default function CrearUsuario() {
                           <label >
                           <input type="password" placeholder="Confirmar contraseña" name="ConfContraseña" id="ConfContraseña" />
                           </label>
-                          <label >
-                            <select name="PreguntaSeguridad" id="PSeguridad">
-                                <option value="Pregunta de seguridad">Pregunta de seguridad</option>
-                            </select>
-                            <input type="text" placeholder="Respuesta de seguridad" />
-                          </label>
-                          <label >
-                            <input type="text" placeholder="Usuario" />
-                          </label>
+                          
                       </div>
-                      <button id='CrearUsuario' className='BUSCARV'> Crear Usaurio</button>
+                      <button id='CrearUsuario' className='BUSCARV'> Cambiar Contraseña </button>
+                      <button id='CrearUsuario' className='BUSCARV'> Cancelar</button>
                   </form>
             <hr />
             

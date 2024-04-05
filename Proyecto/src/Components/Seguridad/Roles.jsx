@@ -1,12 +1,11 @@
-import React from 'react'
 
-export default function CambiarContraseña() {
+export default function Roles() {
   return (
     <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cambiar contraseña</title>
+        <title>Roles</title>
     </head>
     <header className="header">
     <div className="logo">
@@ -14,6 +13,7 @@ export default function CambiarContraseña() {
         <img src="/ZafirLogo.jpg" alt="ZAFIR AIRLINES" />
       </a>
       <a className="MENUA" href="#">Seguridad</a>
+      <a className="MENUA" href="#">Administración</a>
       
     </div>
     <nav >
@@ -43,32 +43,42 @@ export default function CambiarContraseña() {
                 </li>
             </ul>
 
-            
+            <input type="text" placeholder='Nombre' id='BuscadorNombres' />
+            <button id='BuscarRol'> Buscar</button>
         </div>
         <div className='Usuarios'>
-        <h2 className='RegistroH2'>Cambiar contraseña</h2>
-                  
-                  <form className="form form-login">
-                      <div>
-                          <label >
-                              <input type="text" placeholder="Usuario" name="Usuario"/>
-                          </label>
-                      </div>
-                      <div>
-                          
-                          <label >
-                          <input type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" /> 
-                          
-                          </label>
-                          <label >
-                          <input type="password" placeholder="Confirmar contraseña" name="ConfContraseña" id="ConfContraseña" />
-                          </label>
-                          
-                      </div>
-                      <button id='CrearUsuario' className='BUSCARV'> Cambiar Contraseña </button>
-                      <button id='CrearUsuario' className='BUSCARV'> Cancelar</button>
-                  </form>
-            <hr />
+            <table className='TablaRoles'>
+                <tr>
+                <th>Usuarios</th>
+                </tr>
+                <tr>
+                <td> <a href="">
+                        USUARIO1
+                    </a> 
+                </td>
+                </tr>
+                <tr>
+                <td> <a href="">
+                        USUARIO2
+                    </a> 
+                </td>
+                </tr>
+                <tr>
+                <td> <a href="">
+                        USUARIO3
+                    </a> 
+                </td>
+                </tr>
+                <tr>
+                <td> <a href="">
+                        USUARIO4
+                    </a> 
+                </td>
+                </tr>
+
+
+            </table>
+            
             
         </div>
 
