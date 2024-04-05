@@ -65,7 +65,8 @@ export default function CambiarContraseña() {
                           </label>
                           
                       </div>
-                      <button id='CrearUsuario' className='BUSCARV'> Crear Usaurio</button>
+                      <button id='CrearUsuario' className='BUSCARV'> Cambiar Contraseña </button>
+                      <button id='CrearUsuario' className='BUSCARV'> Cancelar</button>
                   </form>
             <hr />
             
