@@ -535,6 +535,7 @@ ul {
   width: 90%;
   color: black;
 
+
 }
 .Usuarios h3{
   margin-left: 60px;
@@ -582,4 +583,21 @@ td{
     color: white;
     height: 40px;
     margin-top: 10px;
+}
+#CrearUsuario{
+  background-color: #FF3131;
+  width: 155px;
+  border: none;
+  margin-left: 40px;
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.RegistroH2{
+  color: #000;
+  text-align: center;
 }

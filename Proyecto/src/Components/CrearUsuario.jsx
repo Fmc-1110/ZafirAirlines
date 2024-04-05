@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function Roles() {
+export default function CrearUsuario() {
   return (
     <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Roles</title>
+        <title>Crear usuario</title>
     </head>
     <header className="header">
     <div className="logo">
@@ -43,42 +43,48 @@ export default function Roles() {
                 </li>
             </ul>
 
-            <input type="text" placeholder='Nombre' id='BuscadorNombres' />
-            <button id='BuscarRol'> Buscar</button>
+            
         </div>
         <div className='Usuarios'>
-            <table className='TablaRoles'>
-                <tr>
-                <th>Usuarios</th>
-                </tr>
-                <tr>
-                <td> <a href="">
-                        USUARIO1
-                    </a> 
-                </td>
-                </tr>
-                <tr>
-                <td> <a href="">
-                        USUARIO2
-                    </a> 
-                </td>
-                </tr>
-                <tr>
-                <td> <a href="">
-                        USUARIO3
-                    </a> 
-                </td>
-                </tr>
-                <tr>
-                <td> <a href="">
-                        USUARIO4
-                    </a> 
-                </td>
-                </tr>
-
-
-            </table>
-            
+        <h2 className='RegistroH2'>Usuarios</h2>
+                  
+                  <form className="form form-login">
+                      <div>
+                          <label >
+                              <input type="text" placeholder="Nombre" name="Nombre"/>
+                          </label>
+                      </div>
+                      <div>
+                          <label>
+                              <input type="text" placeholder="Primer apellido" name="PApellido"/>
+                             
+                          </label>
+                          <label >
+                          <input type="text" placeholder="Segundo apellido" name="SApellido" id="SApellido" />
+                          </label>
+                          <label >
+                          <input type="email" placeholder="Correo electrónico" name="Correo" id="Correo" />
+                          </label>
+                          <label >
+                          <input type="password" placeholder="Contraseña" name="Contraseña" id="Contraseña" /> 
+                          
+                          </label>
+                          <label >
+                          <input type="password" placeholder="Confirmar contraseña" name="ConfContraseña" id="ConfContraseña" />
+                          </label>
+                          <label >
+                            <select name="PreguntaSeguridad" id="PSeguridad">
+                                <option value="Pregunta de seguridad">Pregunta de seguridad</option>
+                            </select>
+                            <input type="text" placeholder="Respuesta de seguridad" />
+                          </label>
+                          <label >
+                            <input type="text" placeholder="Usuario" />
+                          </label>
+                      </div>
+                      <button id='CrearUsuario' className='BUSCARV'> Crear Usaurio</button>
+                  </form>
+            <hr />
             
         </div>
 
