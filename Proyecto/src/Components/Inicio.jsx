@@ -52,7 +52,6 @@ export default function Inicio() {
         <select className="Select-box2" id='SelectIda'>
             <option value="">Ida y vuelta</option>
             <option value="">Solo ida</option>
-            <option value="">Solo vuelta</option>
         </select>
           <h2>Salida</h2>
           <input type="date" id="fecha" name="fecha"/>
