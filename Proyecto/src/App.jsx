@@ -12,13 +12,17 @@ import Aerolíneas from './Components/Admin/Aerolineas'
 import EditAerolineas from './Components/Admin/EditAerolineas'
 import Puertas from './Components/Admin/Puertas'
 import EditPuertas from './Components/Admin/EditPuertas'
+import Bitácora from './Components/Admin/Bitácora'
+import Errores from './Components/Admin/Errores'
+import AerolineasXPais from './Components/Admin/AerolineasXPais'
+import PuertasActivas from './Components/Admin/PuertasActivas'
 function App() {
 
   return (
   <div>
 
 
-    <EditPuertas></EditPuertas>  
+    <PuertasActivas></PuertasActivas>  
 
 
   </div>

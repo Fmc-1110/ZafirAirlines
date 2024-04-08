@@ -14,6 +14,7 @@ export default function EditPuertas() {
         </a>
         <a className="MENUA" href="#">Seguridad</a>
         <a className="MENUA" href="#">Administración</a>
+        <a className="MENUA" href="#">Consultas</a>
         
       </div>
       <nav >

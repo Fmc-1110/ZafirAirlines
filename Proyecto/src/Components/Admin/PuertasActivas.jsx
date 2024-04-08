@@ -1,11 +1,11 @@
 
-export default function Países() {
+export default function PuertasActivas() {
     return (
       <html lang="en">
       <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Paises</title>
+          <title>Errores</title>
       </head>
       <header className="header">
       <div className="logo">
@@ -31,19 +31,22 @@ export default function Países() {
               <ul>
                   <li> 
                       <a href="">
-                          Consecutivos
+                          Bitácora
                       </a> 
                   </li>
-                  <li> <a href="">
-                          Países
+                  <li> 
+                      <a href="">
+                          Errores
                       </a> 
                   </li>
-                  <li> <a href="">
-                          Aerolíneas
+                  <li> 
+                      <a href="">
+                          Aerolineas por país
                       </a> 
                   </li>
-                  <li> <a href="">
-                          Puertas del aeropuerto
+                  <li> 
+                      <a href="">
+                          Puertas activas
                       </a> 
                   </li>
               </ul>
@@ -51,72 +54,55 @@ export default function Países() {
               
           </div>
           <div className='Usuarios'>
-          <h2 className='RegistroH2'>Países</h2>
+          <h2 className='RegistroH2'>Puertas activas</h2>
           <table className='TablaConsec'>
                 <tr>
                 <th>Código</th>
-                <th>País</th>
-                <th>Bandera</th>
-                <th> </th>
+                <th>Puerta</th>
+                <th>Detalle</th>
                 </tr>
                 <tr>
                 <td>
-                        1
+                        00000
                     
                 </td>
                 <td> 
-                        Costa Rica
+                    PUERTA
                     
                 </td>
                 <td> 
-                [Imagen]
+                    Detalle
                     
-                </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
                 </td>
                 </tr>
                 <tr>
                 <td>
-                        2
+                        00000
                     
                 </td>
                 <td> 
-                        Colombia
+                PUERTA
                     
                 </td>
                 <td> 
-                [Imagen]
+                    Detalle
                     
-                </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
                 </td>
                 </tr>
                 <tr>
                 <td>
-                        3
+                        00000
                     
                 </td>
                 <td> 
-                        México
+                    PUERTA
                     
                 </td>
                 <td> 
-                [Imagen]
-                     
-                </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
+                    Detalle
+                    
                 </td>
                 </tr>
-                
-        
-
-
             </table>
                     
                     

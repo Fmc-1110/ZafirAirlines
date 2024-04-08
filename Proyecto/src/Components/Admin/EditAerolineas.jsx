@@ -13,7 +13,7 @@ export default function EditAerolineas() {
         </a>
         <a className="MENUA" href="#">Seguridad</a>
         <a className="MENUA" href="#">Administración</a>
-        
+        <a className="MENUA" href="#">Consultas</a>
       </div>
       <nav >
         

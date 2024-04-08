@@ -1,11 +1,11 @@
 
-export default function Países() {
+export default function AerolineasXPais() {
     return (
       <html lang="en">
       <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Paises</title>
+          <title>Aerolineas por país</title>
       </head>
       <header className="header">
       <div className="logo">
@@ -31,19 +31,22 @@ export default function Países() {
               <ul>
                   <li> 
                       <a href="">
-                          Consecutivos
+                          Bitácora
                       </a> 
                   </li>
-                  <li> <a href="">
-                          Países
+                  <li> 
+                      <a href="">
+                          Errores
                       </a> 
                   </li>
-                  <li> <a href="">
-                          Aerolíneas
+                  <li> 
+                      <a href="">
+                          Aerolineas por país
                       </a> 
                   </li>
-                  <li> <a href="">
-                          Puertas del aeropuerto
+                  <li> 
+                      <a href="">
+                          Puertas activas
                       </a> 
                   </li>
               </ul>
@@ -51,72 +54,58 @@ export default function Países() {
               
           </div>
           <div className='Usuarios'>
-          <h2 className='RegistroH2'>Países</h2>
+          <h2 className='RegistroH2'>Aerolíneas por país </h2>
           <table className='TablaConsec'>
+            
+            <p>Seleccione un país</p>
+            <select name="" id=""></select>
                 <tr>
-                <th>Código</th>
-                <th>País</th>
-                <th>Bandera</th>
-                <th> </th>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Mensaje</th>
                 </tr>
                 <tr>
                 <td>
-                        1
+                        00000
                     
                 </td>
                 <td> 
-                        Costa Rica
+                    00/00/0000
                     
                 </td>
                 <td> 
-                [Imagen]
+                    MENSAJE
                     
-                </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
                 </td>
                 </tr>
                 <tr>
                 <td>
-                        2
+                        00000
                     
                 </td>
                 <td> 
-                        Colombia
+                    00/00/0000
                     
                 </td>
                 <td> 
-                [Imagen]
+                    MENSAJE
                     
-                </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
                 </td>
                 </tr>
                 <tr>
                 <td>
-                        3
+                        00000
                     
                 </td>
                 <td> 
-                        México
+                    00/00/0000
                     
                 </td>
                 <td> 
-                [Imagen]
-                     
-                </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
+                    MENSAJE
+                    
                 </td>
                 </tr>
-                
-        
-
-
             </table>
                     
                     
