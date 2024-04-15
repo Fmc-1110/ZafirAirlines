@@ -607,3 +607,42 @@ td{
   border-radius: 10px; 
   overflow: hidden;
 }
+/* BUSQUEDA */
+.BUSQUEDA{
+  margin-top: 28px;
+  color: white;
+  display: grid;
+  background-color: #12233f;
+  border-radius: 10%;
+}
+.BUSQUEDA li{
+  margin-top: 10px;
+  margin-right: 36px;
+}
+.TABLAVUELOS{
+  margin-top: 25px;
+  margin-left: 39px;
+  width: 90%;
+  color: white;
+
+
+}
+.TABLAVUELOS h3{
+  margin-left: 60px;
+}
+.TABLAVUELOSV{
+  background-color: #DDE7EE;
+  margin: 25px;
+  margin-top: 28px;
+  align-content: center;
+  border-radius: 10px; 
+  overflow: hidden;
+}
+.TABLAVUELOSV :last-child{
+  margin-right: 20px;
+}
+.FILTROSV select{
+ display: inline-block;
+ margin-right: 10px; 
+}
+

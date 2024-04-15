@@ -17,13 +17,14 @@ import Errores from './Components/Admin/Errores'
 import AerolineasXPais from './Components/Admin/AerolineasXPais'
 import PuertasActivas from './Components/Admin/PuertasActivas'
 import Perfil from './Components/Usuarios/Perfil'
+import Busqueda from './Components/Usuarios/Busqueda'
 function App() {
 
   return (
   <div>
 
 
-    <Perfil></Perfil>  
+    <Busqueda></Busqueda>  
 
 
   </div>
