@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 export default function Roles() {
   return (
     <html lang="en">
@@ -12,8 +12,13 @@ export default function Roles() {
       <a href="#">
         <img src="/ZafirLogo.jpg" alt="ZAFIR AIRLINES" />
       </a>
+      <Link to='/Roles' className="MENUA">
       <a className="MENUA" href="#">Seguridad</a>
+      </Link>
+      <Link to='/Aerolineas' className="MENUA">
       <a className="MENUA" href="#">Administración</a>
+      </Link>
+      
       
     </div>
     <nav >
@@ -29,17 +34,20 @@ export default function Roles() {
         <div className='OpcionesR'>
             <ul>
                 <li> 
-                    <a href="">
-                        Crear usuario
-                    </a> 
+                <Link to={'/CrearUsuario'}>
+                Crear usuario
+                </Link>
                 </li>
-                <li> <a href="">
-                        Editar roles
-                    </a> 
+                <li> 
+                <Link to={'/Roles'}>
+                Ediar roles
+                </Link>
+                  
                 </li>
-                <li> <a href="">
-                        Cambiar contraseña
-                    </a> 
+                <li> 
+                <Link to={'/CambiarContraseña'}>
+                Cambiar contraseña
+                </Link>
                 </li>
             </ul>
 

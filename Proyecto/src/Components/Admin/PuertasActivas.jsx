@@ -50,8 +50,6 @@ export default function PuertasActivas() {
                       </a> 
                   </li>
               </ul>
-  
-              
           </div>
           <div className='Usuarios'>
           <h2 className='RegistroH2'>Puertas activas</h2>

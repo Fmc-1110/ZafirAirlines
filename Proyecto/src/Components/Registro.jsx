@@ -1,5 +1,5 @@
 
-
+import { Link } from 'react-router-dom';
 export default function Registro() {
     return (
       <html lang="en">
@@ -20,7 +20,10 @@ export default function Registro() {
               <div className="info-childs">
                   <h2>Tu viaje, nuestro compromiso</h2>
                   <p>Registrate y disfruta de nuestros servicios</p>
+                  <Link to={'/IniciarSesion'}>
                   <input type="button" value="¿Ya tienes una cuenta? Inicia sesión" id="sign-up"/>
+                  </Link>
+                  
               </div>
           </div>
           <div className="form-information">

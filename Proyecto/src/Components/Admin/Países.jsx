@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 export default function Países() {
     return (
       <html lang="en">
@@ -29,22 +29,26 @@ export default function Países() {
           <div className='RolesInicio'>
           <div className='OpcionesR'>
               <ul>
+              <li> 
+                    <Link to={'/Consecutivos'}>
+                    Consecutivos
+                    </Link>
+                       
+                  </li>
                   <li> 
-                      <a href="">
-                          Consecutivos
-                      </a> 
+                  <Link to={'/Países'}>
+                    Países
+                    </Link>
                   </li>
-                  <li> <a href="">
-                          Países
-                      </a> 
+                  <li> 
+                  <Link to={'/Aerolineas'}>
+                    Aerolineas
+                    </Link> 
                   </li>
-                  <li> <a href="">
-                          Aerolíneas
-                      </a> 
-                  </li>
-                  <li> <a href="">
-                          Puertas del aeropuerto
-                      </a> 
+                  <li> 
+                  <Link to={'/Puertas'}>
+                    Puertas del aeropuerto
+                    </Link> 
                   </li>
               </ul>
   

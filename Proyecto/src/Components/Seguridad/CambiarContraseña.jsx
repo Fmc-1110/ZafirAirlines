@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 export default function CambiarContraseña() {
   return (
     <html lang="en">
@@ -12,8 +12,12 @@ export default function CambiarContraseña() {
       <a href="#">
         <img src="/ZafirLogo.jpg" alt="ZAFIR AIRLINES" />
       </a>
+      <Link to='/Roles' className="MENUA">
       <a className="MENUA" href="#">Seguridad</a>
+      </Link>
+      <Link to='/Aerolineas' className="MENUA">
       <a className="MENUA" href="#">Administración</a>
+      </Link>
       
     </div>
     <nav >
@@ -27,19 +31,22 @@ export default function CambiarContraseña() {
     <body>
         <div className='RolesInicio'>
         <div className='OpcionesR'>
-            <ul>
+        <ul>
                 <li> 
-                    <a href="">
-                        Crear usuario
-                    </a> 
+                <Link to={'/CrearUsuario'}>
+                Crear usuario
+                </Link>
                 </li>
-                <li> <a href="">
-                        Editar roles
-                    </a> 
+                <li> 
+                <Link to={'/Roles'}>
+                Ediar roles
+                </Link>
+                  
                 </li>
-                <li> <a href="">
-                        Cambiar contraseña
-                    </a> 
+                <li> 
+                <Link to={'/CambiarContraseña'}>
+                Cambiar contraseña
+                </Link>
                 </li>
             </ul>
 

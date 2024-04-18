@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 export default function IniciarSesion() {
   return (
@@ -20,9 +20,9 @@ export default function IniciarSesion() {
             <div className="info-childs">
                 <h2>Tu viaje, nuestro compromiso</h2>
                 <p>Inicia sesión y disfruta de nuestros servicios</p>
-                <a href="#">
+                <Link to="/Registro">
                 <input type="button" value="¿No tienes una cuenta? Registrate" id="sign-up"/>
-                </a>
+                </Link>
                 
             </div>
         </div>
@@ -44,6 +44,10 @@ export default function IniciarSesion() {
                         </label>
                     </div>
                     <input type="submit" value="Iniciar Sesión"/>
+                    <Link to='/Roles'>
+                    <input type="submit" value="Iniciar como administrador"/>
+                    </Link>
+                    
                 </form>
                 <p>Iniciar sesión con </p>
                 <div className="icons">

@@ -1,5 +1,17 @@
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 export default function Busqueda() {
+        const location = useLocation();
+
+        // Extraer la cadena de consulta de la ubicación actual
+        const searchParams = new URLSearchParams(location.search);
+      
+        // Obtener los valores de los parámetros de consulta
+        const origen = searchParams.get('origen');
+        const destino = searchParams.get('destino');
+        const salida = searchParams.get('salida');
+        const pasajeros = searchParams.get('pasajeros');
   return (
     <html lang='eng'>
     <head>
@@ -36,19 +48,19 @@ export default function Busqueda() {
                   </li>
                   <li> 
                   <h3>ORIGEN</h3> 
-                    <p>pais 1</p>
+                    <p>{origen}</p>
                   </li>
                   <li> 
                   <h3>DESTINO</h3> 
-                    <p>pais 2</p>
+                    <p>{destino}</p>
                   </li>
                   <li>
                   <h3>SALIDA</h3> 
-                    <p>00/00/0000</p>
+                    <p>{salida}</p>
                   </li>
                   <li>
                   <h3>PASAJEROS</h3> 
-                    <p> X persona(s)</p>
+                    <p>{pasajeros}</p>
                   </li>
               </ul>
           </div>
@@ -150,6 +162,12 @@ export default function Busqueda() {
                 </td>
                 <td>
                         N/A
+                </td>
+                <td> 
+                        <Link to={'/Pago'}>
+                        <button>Reservar</button> 
+                        </Link>
+                        
                 </td>
                 </tr>
                 <tr>

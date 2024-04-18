@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 export default function Aerolíneas() {
     return (
       <html lang="en">
@@ -12,8 +12,12 @@ export default function Aerolíneas() {
         <a href="#">
           <img src="/ZafirLogo.jpg" alt="ZAFIR AIRLINES" />
         </a>
-        <a className="MENUA" href="#">Seguridad</a>
-        <a className="MENUA" href="#">Administración</a>
+        <Link to='/Roles' className="MENUA">
+      <a className="MENUA" href="#">Seguridad</a>
+      </Link>
+      <Link to='/Aerolineas' className="MENUA">
+      <a className="MENUA" href="#">Administración</a>
+      </Link>
         <a className="MENUA" href="#">Consultas</a>
         
       </div>
@@ -30,21 +34,25 @@ export default function Aerolíneas() {
           <div className='OpcionesR'>
               <ul>
                   <li> 
-                      <a href="">
-                          Consecutivos
-                      </a> 
+                    <Link to={'/Consecutivos'}>
+                    Consecutivos
+                    </Link>
+                       
                   </li>
-                  <li> <a href="">
-                          Países
-                      </a> 
+                  <li> 
+                  <Link to={'/Países'}>
+                    Países
+                    </Link>
                   </li>
-                  <li> <a href="">
-                          Aerolíneas
-                      </a> 
+                  <li> 
+                  <Link to={'/Aerolineas'}>
+                    Aerolineas
+                    </Link> 
                   </li>
-                  <li> <a href="">
-                          Puertas del aeropuerto
-                      </a> 
+                  <li> 
+                  <Link to={'/Puertas'}>
+                    Puertas del aeropuerto
+                    </Link> 
                   </li>
               </ul>
   
@@ -82,9 +90,10 @@ export default function Aerolíneas() {
                 País
                     
                 </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
+                <td> 
+                  <Link to={'/EditAerolineas'}>
+                    Editar
+                </Link>
                 </td>
                 </tr>
                 <tr>
@@ -108,9 +117,9 @@ export default function Aerolíneas() {
                 País
                     
                 </td>
-                <td> <a href="">
-                        Editar
-                    </a> 
+                <td> <Link to={'/EditAerolineas'}>
+                    Editar
+                </Link>
                 </td>
                 </tr>
                 

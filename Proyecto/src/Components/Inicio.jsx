@@ -1,7 +1,39 @@
 
 import './Inicio.css'
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 export default function Inicio() {
+  const [origen, setOrigen] = useState('');
+  const [destino, setDestino] = useState('');
+  const [idaVuelta, setIdaVuelta] = useState('Ida y vuelta');
+  const [fechaSalida, setFechaSalida] = useState('');
+  const [fechaRegreso, setFechaRegreso] = useState('');
+  const [pasajeros, setPasajeros] = useState(1);
+
+  // Manejadores de eventos para actualizar el estado cuando cambian los valores seleccionados
+  const handleOrigenChange = (event) => {
+    setOrigen(event.target.value);
+  };
+
+  const handleDestinoChange = (event) => {
+    setDestino(event.target.value);
+  };
+
+  const handleIdaVueltaChange = (event) => {
+    setIdaVuelta(event.target.value);
+  };
+
+  const handleFechaSalidaChange = (event) => {
+    setFechaSalida(event.target.value);
+  };
+
+  const handleFechaRegresoChange = (event) => {
+    setFechaRegreso(event.target.value);
+  };
+
+  const handlePasajerosChange = (event) => {
+    setPasajeros(parseInt(event.target.value));
+  };
   return (
     <html lang='eng'>
     <head>
@@ -13,9 +45,10 @@ export default function Inicio() {
     
     <header className="header">
     <div className="logo">
-      <a href="#">
+        <Link to={"/Inicio"} >
         <img src="/ZafirLogo.jpg" alt="ZAFIR AIRLINES" />
-      </a>
+        </Link>
+        
       <a className="MENUA" href="#">Reservar</a>
       <a className="MENUA" href="#">Información</a>
       <a className="MENUA" href="#">Mis vuelos</a>
@@ -24,7 +57,10 @@ export default function Inicio() {
     <nav >
       
       <a className="MENUA" id="margen" href="#">
+        <Link to='/IniciarSesion' className="MENUA" id="margen">
         <img src="/person.png" alt="Usuario" />
+        </Link>
+        
       </a>
     </nav>
     
@@ -33,41 +69,43 @@ export default function Inicio() {
     <div className='InicioA'>
     <div className="Select-Container">
         
-        <select className="Select-box" id='SelectPaises'>
-            <option value="">SJO</option>
-            <option value="">COL</option>
-            <option value="">BRZ</option>
-            <option value="">ESP</option>
-        </select>
+    <select className="Select-box" value={origen} onChange={handleOrigenChange}>
+        <option value="SJO">SJO</option>
+        <option value="COL">COL</option>
+        <option value="BRZ">BRZ</option>
+        <option value="ESP">ESP</option>
+      </select>
 
-        <img src="/DoubleLines.png" alt="To" id='LineasDobles' />
+      <img src="/DoubleLines.png" alt="To" id="LineasDobles" />
 
-        <select className="Select-box" id='SelectPaises'>
-            <option value="">COL</option>
-            <option value="">SJO</option>
-            <option value="">BRZ</option>
-            <option value="">ESP</option>
-        </select>
+      <select className="Select-box" value={destino} onChange={handleDestinoChange}>
+        <option value="COL">COL</option>
+        <option value="SJO">SJO</option>
+        <option value="BRZ">BRZ</option>
+        <option value="ESP">ESP</option>
+      </select>
 
-        <select className="Select-box2" id='SelectIda'>
-            <option value="">Ida y vuelta</option>
-            <option value="">Solo ida</option>
-        </select>
-          <h2>Salida</h2>
-          <input type="date" id="fecha" name="fecha"/>
-        
-          <h2 className='Regreso'>Regreso</h2>
-          <input type="date" id="fecha" name="fecha"/>
+      <select className="Select-box2" value={idaVuelta} onChange={handleIdaVueltaChange}  id='SelectIda'>
+        <option value="Ida y vuelta">Ida y vuelta</option>
+        <option value="Solo ida">Solo ida</option>
+      </select>
 
-          
-          <input placeholder='1' type="number" id="CantPasajeros" name="numero"/>
-          <h2 className='Regreso'>Pasajeros</h2>
+      <h2>Salida</h2>
+      <input type="date" id="fecha" value={fechaSalida} onChange={handleFechaSalidaChange} />
 
-          <a href="#">
-          <button id='BuscarV' className='BUSCARV'> BUSCAR</button>
-          </a>
+      {idaVuelta === 'Ida y vuelta' && (
+        <>
+          <h2 className="Regreso">Regreso</h2>
+          <input type="date"  id="fecha" value={fechaRegreso} onChange={handleFechaRegresoChange} />
+        </>
+      )}
 
-          
+      <input placeholder="1" id="CantPasajeros"  type="number" value={pasajeros} onChange={handlePasajerosChange} />
+      <h2 className="Regreso">Pasajeros</h2>
+          <Link to={`/busqueda?origen=${origen}&destino=${destino}&idaVuelta=${idaVuelta}&fechaSalida=${fechaSalida}&fechaRegreso=${fechaRegreso}&pasajeros=${pasajeros}`}>
+        <button id='BuscarV' className='BUSCARV'>BUSCAR</button>
+      </Link>
+
         
     </div>
     </div>
